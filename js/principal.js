@@ -1,3 +1,12 @@
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", funcaoQueFazAlgo);
+
+
+function funcaoQueFazAlgo() {
+   event.preventDefault();
+    console.log("Fiz Algo");
+}
+
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
