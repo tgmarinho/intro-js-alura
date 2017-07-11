@@ -1,5 +1,3 @@
-// calcula-imc.js
-
 var titulo = document.querySelector(".titulo");
 titulo.textContent = "Aparecida Nutricionista";
 
@@ -21,6 +19,7 @@ for (var i = 0; i < pacientes.length; i++) {
     var alturaEhValida = true;
 
     if (peso <= 0 || peso >= 1000) {
+        console.log("Peso inválido!");
         pesoEhValido = false;
         tdImc.textContent = "Peso inválido";
         paciente.classList.add("paciente-invalido");
@@ -38,7 +37,6 @@ for (var i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc;
     }
 }
-
 
 function calculaImc(peso, altura) {
     var imc = 0;
